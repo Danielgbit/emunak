@@ -1,34 +1,11 @@
-import { Config } from 'tailwindcss'
-
-const config: Config = {
+/** @type {import('tailwindcss').Config} */
+module.exports = {
   content: [
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,mdx}",
-    "./sections/**/*.{js,ts,jsx,mdx}",
-    "./src/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx}",
+    "./src/components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {
-      colors: {
-        primary: '#3490dc',
-        secondary: '#ffed4a',
-      },
-      fontFamily: {
-        sans: ['Graphik', 'sans-serif'],
-        serif: ['Merriweather', 'serif'],
-      },
-      spacing: {
-        '72': '18rem',
-        '84': '21rem',
-        '96': '24rem',
-      },
-      fontSize: {
-        12: '12',
-        14: '14',
-        16: '16'
-      }
-    },
+    extend: {},
   },
   plugins: [],
-}
+};
