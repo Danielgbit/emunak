@@ -6,7 +6,7 @@ const Hero = () => {
     <div className="relative w-full pb-[56.25%] overflow-hidden">
       <img
         src={image.src}
-        className="absolute bottom-20 w-full h-full object-cover"
+        className="absolute bottom-20 w-full object-cover"
         alt="Imagen con relación de aspecto 16:9"
       />
     </div>

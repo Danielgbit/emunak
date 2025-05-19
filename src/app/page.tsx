@@ -1,8 +1,11 @@
+import Benefits from "@/sections/Benefits";
 import Hero from "@/sections/Hero";
 
 export default function Home() {
   return (
-    <Hero/>
+    <div>
+     {/*  <Hero /> */}
+      <Benefits />
+    </div>
   );
 }
-
