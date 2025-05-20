@@ -1,8 +1,8 @@
 import "./globals.css"; // ✅ ¡esto es obligatorio!
-import { Yeseva_One } from "next/font/google";
+import { Lora } from "next/font/google";
 
 
-const yesevaOne = Yeseva_One({
+const lora = Lora({
   weight: '400',
   subsets: ['latin']
 });
@@ -16,7 +16,7 @@ const yesevaOne = Yeseva_One({
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={yesevaOne.className}> 
+    <html lang="en" className={lora.className}> 
       <body>{children}</body>
     </html>
   );

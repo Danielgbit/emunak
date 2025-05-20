@@ -1,5 +1,5 @@
-import image from '../../public/images/hero.png'
-
+import image from "../../public/images/benefits.png";
+import Image from 'next/image'
 const beneficios = [
   "Aromas 100% naturales",
   "Hechas a mano con amor",
@@ -9,17 +9,26 @@ const beneficios = [
 
 function Benefits() {
   return (
-    <section className="flex my-[6%] mx-[3%] place-content-between">
-      <div>
-        <img className='w-[500px] rounded-[10px]' src={image.src} alt="imagen de vela" />
+    <section className="flex my-[10%]">
+      <div className="flex items-center flex-col justify-center mx-[5%]">
+        <Image
+          src={image.src}
+          alt="Imagen de vela aromática"
+          width={500}
+          height={500}
+          className="rounded-[50%] image"
+        />
       </div>
-      <div>
-        <h2 className="text-4xl font-semibold text-gray-800 mb-10">
+      <div className="flex items-center flex-col mx-[5%] my-[10%]">
+        <h2 className="text-rem-2.5 text-4xl font-semibold text-color-t mb-10 w-[100%]">
           Beneficios
         </h2>
         <ul className="grid gap-6 sm:grid-cols-2 max-w-3xl mx-auto text-lg text-gray-700">
           {beneficios.map((b, i) => (
-            <li key={i} className="bg-white text-[14px] text-[#5a664a] tracking-[-0.5px] py-[4px] px-[2px] rounded-xl shadow">
+            <li
+              key={i}
+              className="bg-[#605c22] text-[#fffbbf] font-extralight text-[14px] tracking-[-0.6px] py-[4px] px-[10px] rounded-[20px]"
+            >
               {b}
             </li>
           ))}
