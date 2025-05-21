@@ -1,11 +1,19 @@
 import "./globals.css"; // ✅ ¡esto es obligatorio!
-import { Lora } from "next/font/google";
+import { Lato, Lora, Rubik } from "next/font/google";
 
 
 const lora = Lora({
+  variable: '--font-lora',
   weight: '400',
   subsets: ['latin']
 });
+
+const rubik = Rubik({
+  variable: '--font-rubik',
+  weight: ['300', '400', '600', '700'],
+  subsets: ['latin']
+});
+
 
 
 /* export const metadata: Metadata = {
@@ -16,7 +24,7 @@ const lora = Lora({
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={lora.className}> 
+    <html lang="en" className={`${lora.className} ${rubik.variable}`}> 
       <body>{children}</body>
     </html>
   );

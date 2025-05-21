@@ -10,12 +10,18 @@ module.exports = {
       colors: {
         "color-t": "#fffbbf",
       },
+      fontFamily: {
+        rubik: ["var(--font-rubik)"],
+        lora: ["var(--font-lora)"],
+      },
       backgroundColor: {
+        navbar: '#66611a8f',
         cards: "#605c22",
       },
       backgroundImage: {
-        "gradient-card":
-          "linear-gradient(90deg, rgb(123, 119, 31) 0%, rgb(60, 59, 14) 100%)",
+        'gradient-footer': 'linear-gradient(90deg,rgba(51,49,6,1) 0%,rgba(120,118,53,1) 100%)'
+        ,
+        "gradient-card": "linear-gradient(90deg, rgb(123, 119, 31) 0%, rgb(60, 59, 14) 100%)",
       },
       fontSize: {
         "rem-1": "1rem",
@@ -25,6 +31,8 @@ module.exports = {
         "rem-3": "3rem",
         "rem-3.5": "3.5rem",
         "rem-4": "4rem",
+        "rem-5": "5rem",
+        "rem-6": "6rem",
       },
     },
   },

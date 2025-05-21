@@ -11,15 +11,15 @@ const Hero = () => {
         />
       </div>
       <div className="flex flex-col items-center justify-center gap-5 mt-5">
-        <h1 className="absolute top-40 tracking-[-0.8px] text-color-t  text-rem-4 font-bold">
+        <h1 className="absolute top-40 tracking-[-0.8px] text-color-t  text-rem-6 font-bold">
           Emunak
         </h1>
-        <span className="absolute top-[35%] text-color-t font-medium tracking-[-0.8px] text-black">
+        <span className="absolute top-[38%] font-rubik text-color-t font-light uppercase text-[14px] tracking-[1px]">
           Velas de soya 100%
         </span>
         <a
           href="#products"
-          className="tracking-[-0.8px] top-[50%] rounded-[30px] text-[14px] text-color-t absolute top-80 bg-cards p-5 hover:bg-white hover:text-black hover:duration-600 ease-in-out"
+          className="font-rubik uppercase top-[50%] rounded-[30px] text-[14px] text-color-t absolute top-80 bg-cards p-5 hover:bg-white hover:text-black hover:duration-600 ease-in-out"
         >
           Ver productos
         </a>

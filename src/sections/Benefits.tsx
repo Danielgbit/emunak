@@ -9,14 +9,14 @@ const beneficios = [
 
 function Benefits() {
   return (
-    <section className="flex my-[10%]">
+    <section id="benefits" className="flex my-[10%]">
       <div className="flex items-center flex-col justify-center mx-[5%]">
         <Image
           src={image.src}
           alt="Imagen de vela aromática"
           width={500}
           height={500}
-          className="rounded-[50%] image"
+          className="rounded-[50%] image transition-all duration-500 ease-in-out hover:-translate-y-5 hover:shadow-lg hover:shadow-[#1d3202]"
         />
       </div>
       <div className="flex items-center flex-col mx-[5%] my-[10%]">
