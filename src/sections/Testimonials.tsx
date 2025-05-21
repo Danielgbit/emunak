@@ -1,4 +1,6 @@
-import React from 'react';
+"use client";
+import React from "react";
+import { motion } from "motion/react";
 
 function Testimonials() {
   // Define un array de objetos para almacenar los datos de los testimonios
@@ -23,13 +25,24 @@ function Testimonials() {
 
   return (
     <section className="py-[10%] px-6 text-center ">
-      <h2 className="text-4xl font-semibold mb-10 text-color-t tracking-[-0.8px]">Lo que dicen nuestros clientes</h2>
+      <h2 className="text-4xl font-semibold mb-10 text-color-t tracking-[-0.8px]">
+        Lo que dicen nuestros clientes
+      </h2>
       <div className="flex flex-col md:flex-row gap-8 justify-center max-w-5xl mx-auto">
         {testimonialsData.map((testimonial) => (
-          <blockquote key={testimonial.id} className="bg-gradient-card text-color-t p-6 tracking-[-0.8px] text-[14px] rounded-[20px] shadow max-w-sm">
+          <motion.div
+            initial={{ opacity: 0, x: 100 }}
+            whileInView={{ opacity: 100, x: 0 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: false, amount: 0.5 }}
+            key={testimonial.id}
+            className="bg-gradient-card text-color-t p-6 tracking-[-0.8px] text-[14px] rounded-[20px] shadow max-w-sm"
+          >
             “{testimonial.quote}”
-            <footer className="mt-4 text-rem-1 text-color-t">– {testimonial.author}</footer>
-          </blockquote>
+            <footer className="mt-4 text-rem-1 text-color-t">
+              – {testimonial.author}
+            </footer>
+          </motion.div>
         ))}
       </div>
     </section>
