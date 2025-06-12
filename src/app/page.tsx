@@ -9,7 +9,7 @@ import Testimonials from "@/sections/Testimonials";
 
 export default function Home() {
   return (
-    <div>
+    <div className="h-full">
       <Navbar/>
         <Hero />
         <Benefits />

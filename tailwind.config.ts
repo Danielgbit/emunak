@@ -24,15 +24,21 @@ module.exports = {
         "gradient-card": "linear-gradient(90deg, rgb(123, 119, 31) 0%, rgb(60, 59, 14) 100%)",
       },
       fontSize: {
-        "rem-1": "1rem",
-        "rem-1.5": "1.5rem",
-        "rem-2": "2rem",
-        "rem-2.5": "2.5rem",
-        "rem-3": "3rem",
-        "rem-3.5": "3.5rem",
-        "rem-4": "4rem",
-        "rem-5": "5rem",
-        "rem-6": "6rem",
+                xs: "1.2rem", // 12px
+        sm: "1.4rem", // 14px
+        base: "1.6rem", // 16px
+        lg: "1.8rem", // 18px
+        xl: "2.0rem", // 20px
+        h1: "5.2rem", // 52px para un h1 principal
+        h2: "4.2rem", // 42px para un h2
+        "2xl": "2.4rem", // 24px
+        "3xl": "3.0rem", // 30px
+        "4xl": "3.6rem", // 36px
+        "5xl": "4.8rem", // 48px
+        "6xl": "6.0rem", // 60px
+        "7xl": "7.2rem", // 72px
+        "8xl": "9.6rem", // 96px
+        "9xl": "12.8rem", // 128px        
       },
     },
   },
