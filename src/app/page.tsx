@@ -3,7 +3,10 @@ import Navbar from "@/components/Navbar";
 import About from "@/sections/About";
 import Benefits from "@/sections/Benefits";
 import CTA from "@/sections/CTA";
+import FAQ from "@/sections/FAQ";
+import Gallery from "@/sections/Gallery";
 import Hero from "@/sections/Hero";
+import Instructions from "@/sections/Instructions";
 import Products from "@/sections/Products";
 import Testimonials from "@/sections/Testimonials";
 
@@ -17,6 +20,9 @@ export default function Home() {
         <Testimonials/>
         <CTA/>
         <Products/>
+        <Instructions/>
+        <FAQ/>
+        <Gallery/>
       <Footer/>
     </div>
   );
