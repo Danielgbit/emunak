@@ -1,34 +1,32 @@
-// src/hooks/useScrollDirection.ts
-import { useState, useEffect } from "react";
+import { useState, useEffect } from 'react'
 
-export const useScrollDirection = () => {
-  const [scrollDirection, setScrollDirection] = useState<"up" | "down">("up");
+const useScrollDirection = () => {
+    const [showNavbar, setShowNavbar] = useState(true);
+    const [lastScrollY, setLastScrollY] = useState(0);
+  
+    useEffect(() => {
+      const handleScroll = () => {
+        const currentScroll = window.scrollY;
+        setLastScrollY(currentScroll);
+  
+        if (currentScroll > lastScrollY && currentScroll > 50) {
+          setShowNavbar(false);
+          console.log('scroll', showNavbar);
+          
+        }else {
+          setShowNavbar(true);
+          console.log('scroll', showNavbar);
+          
+        };
+      };
+  
+      window.addEventListener('scroll', handleScroll);
+  
+      return () => window.removeEventListener('scroll', handleScroll);
+  
+    }, [lastScrollY]);
 
-  useEffect(() => {
-    let lastScrollY = window.scrollY;
+    return showNavbar;
+}
 
-    const updateScrollDirection = () => {
-      const currentScrollY = window.scrollY;
-      const direction = currentScrollY > lastScrollY ? "down" : "up";
-
-      if (
-        direction !== scrollDirection &&
-        Math.abs(currentScrollY - lastScrollY) > 10
-      ) {
-        setScrollDirection(direction);
-      }
-
-      lastScrollY = currentScrollY;
-    };
-
-    window.addEventListener("scroll", updateScrollDirection);
-
-    return () => {
-      window.removeEventListener("scroll", updateScrollDirection);
-    };
-
-    
-}, [scrollDirection]);
-
-  return scrollDirection;
-};
+export default useScrollDirection;

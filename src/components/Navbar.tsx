@@ -1,43 +1,15 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useState } from "react";
 import Link from "next/link";
 import logo from "../../public/images/logo.png";
 import clsx from "clsx";
+import useScrollDirection from "@/hooks/useScrollDirection";
+import NAV_LINKS from "@/lib/links";
 
 const Navbar = () => {
-  const [showNavbar, setShowNavbar] = useState(true);
-  const [lastScrollY, setLastScrollY] = useState(0);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const currentScroll = window.scrollY;
-      setLastScrollY(currentScroll);
-
-      if (currentScroll > lastScrollY && currentScroll > 50) {
-        setShowNavbar(false);
-        console.log('scroll', showNavbar);
-        
-      }else {
-        setShowNavbar(true);
-        console.log('scroll', showNavbar);
-        
-      };
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => window.removeEventListener('scroll', handleScroll);
-
-  }, [lastScrollY]);
-
-  const links = [
-    { href: "#about", label: "Sobre nosotros" },
-    { href: "#benefits", label: "Beneficios" },
-    { href: "#products", label: "Productos" },  
-    { href: "#contacto", label: "Contacto" },
-  ];  
+  const showNavbar = useScrollDirection();
 
 
   return (
@@ -48,7 +20,7 @@ const Navbar = () => {
       }
     )}
     >
-      <nav className="max-w-7xl mx-auto py-2 px-8 flex items-center justify-between bg-navbar shadow-md">
+      <nav className="w-full py-2 px-8 flex items-center justify-between bg-navbar shadow-md">
         <Link href="#about">
           <Image
             src={logo}
@@ -60,8 +32,8 @@ const Navbar = () => {
         </Link>
 
         <ul className="flex">
-          <li>{links.map((item) => (
-            <Link className="mx-5 tracking-text text-[14px]" href={item.href}>{item.label}</Link>
+          <li>{NAV_LINKS.map((item, index) => (
+            <Link key={index} className="mx-5 tracking-text text-[14px]" href={item.href}>{item.label}</Link>
           ))}</li>
         </ul>
       </nav>
