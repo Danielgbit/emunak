@@ -32,7 +32,7 @@ function Benefits() {
         />
       </div>
       <div className="flex items-center flex-col mx-[5%] my-[10%]">
-        <h2 className="text-rem-2.5 text-4xl font-semibold text-color-t mb-10 w-[100%]">
+        <h2 className="text-rem-2.5 text-4xl font-semibold text-color-t tracking-text mb-10 w-[100%]">
           Beneficios
         </h2>
         <ul  className="grid gap-6 sm:grid-cols-2 max-w-3xl mx-auto text-lg text-gray-700">
@@ -43,7 +43,7 @@ function Benefits() {
               transition={{ duration: 1 }}
               viewport={{ once: false, amount: 0.5 }}
               key={i}
-              className="bg-[#605c22] text-[#fffbbf] font-extralight text-[14px] tracking-[-0.6px] py-[4px] px-[10px] rounded-[20px]"
+              className="bg-card text-other font-normal text-[14px] tracking-[-0.6px] py-2 px-5 rounded-[20px]"
             >
               {b}
             </motion.li>

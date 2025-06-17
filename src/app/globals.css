@@ -19,10 +19,21 @@ body {
 }
 
 .tracking-text {
-  letter-spacing: -0.6px;
+  letter-spacing: -0.9px;
 }
 
 .text-header {
   font-size: 1rem;
 }
 
+.text-dark {
+  color: #363408
+}
+
+.bg-card {
+  background-color: #4f4c0db6;
+} 
+
+.text-other {
+  color: #fffcaf;
+}

@@ -18,21 +18,21 @@ const instructions = [
 
 function Instructions() {
   return (
-    <section id="instrucciones" className="bg-white py-16 px-6 text-gray-800">
+    <section id="instrucciones" className="py-16 my-40 px-6 text-gray-800">
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-10">
+        <h2 className="text-3xl text-light tracking-text font-bold text-center mb-10">
           Instrucciones de Uso & Cuidado
         </h2>
-        <div className="grid gap-8 md:grid-cols-3">
+        <div className="grid gap-8 md:grid-cols-3 mt-20 tracking-text">
           {instructions.map((item, index) => (
             <div
               key={index}
-              className="bg-[#fff8f5] border border-pink-100 p-6 rounded-xl shadow-md hover:shadow-lg transition"
+              className="bg-card text-light p-6 rounded-xl shadow-md hover:shadow-lg transition"
             >
-              <h3 className="text-xl font-semibold text-pink-600 mb-2">
+              <h3 className="text-xl font-semibold mb-2">
                 {item.title}
               </h3>
-              <p className="text-gray-600 text-[15px] leading-relaxed">
+              <p className="text-other text-[15px] mt-5 leading-relaxed">
                 {item.description}
               </p>
             </div>

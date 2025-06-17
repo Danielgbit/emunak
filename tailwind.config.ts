@@ -24,7 +24,8 @@ module.exports = {
         "gradient-card": "linear-gradient(90deg, rgb(123, 119, 31) 0%, rgb(60, 59, 14) 100%)",
       },
       fontSize: {
-                xs: "1.2rem", // 12px
+        xxs: "1rem", // 11px
+        xs: "1.2rem", // 12px
         sm: "1.4rem", // 14px
         base: "1.6rem", // 16px
         lg: "1.8rem", // 18px
