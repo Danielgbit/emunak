@@ -34,6 +34,10 @@ body {
   background-color: #4f4c0db6;
 } 
 
+.bg-button {
+  background-color: #282605b6;
+} 
+
 .text-other {
   color: #fffcaf;
 }

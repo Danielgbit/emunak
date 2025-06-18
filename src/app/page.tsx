@@ -7,8 +7,9 @@ import FAQ from "@/sections/FAQ";
 import Gallery from "@/sections/Gallery";
 import Hero from "@/sections/Hero";
 import Instructions from "@/sections/Instructions";
-import Products from "@/sections/Products";
+import Products from "@/sections/FeaturedProducts";
 import Testimonials from "@/sections/Testimonials";
+import FeaturedProducts from "@/sections/FeaturedProducts";
 
 export default function Home() {
   return (
@@ -19,7 +20,7 @@ export default function Home() {
         <About/>
         <Testimonials/>
         <CTA/>
-        <Products/>
+        <FeaturedProducts/>
         <Instructions/>
         <FAQ/>
         <Gallery/>
