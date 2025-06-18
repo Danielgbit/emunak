@@ -14,7 +14,7 @@ export default function Footer() {
             alt="logo"
             className="rounded-[50%]"
           />
-          <p className="mt-4 text-[15px] tracking-[-0.8px]">
+          <p className="mt-6 text-[14px] tracking-[-0.8px]">
             Velas artesanales hechas con amor en Colombia. Diseños únicos y
             aromas que transforman espacios.
           </p>
@@ -22,8 +22,8 @@ export default function Footer() {
 
         {/* Navegación */}
         <div>
-          <h4 className="font-semibold mb-2">Navegación</h4>
-          <ul className="space-y-2 text-sm">
+          <h4 className="font-semibold mb-5 text-sm">Navegación</h4>
+          <ul className="space-y-2 text-sm text-4xs">
             <li>
               <a href="#about" className="tracking-[-0.8px] hover:text-pink-600 transition">
                 Sobre nosotros
@@ -49,8 +49,8 @@ export default function Footer() {
 
         {/* Contacto */}
         <div>
-          <h4 className="font-semibold mb-2">Contacto</h4>
-          <ul className="text-sm space-y-2">
+          <h4 className="font-semibold mb-2 text-sm">Contacto</h4>
+          <ul className="text-4xs space-y-2">
             <li>
               <a
                 href="mailto:contacto@emunak.com"
@@ -75,7 +75,7 @@ export default function Footer() {
 
         {/* Redes sociales */}
         <div>
-          <h4 className="font-semibold mb-2">Síguenos</h4>
+          <h4 className="font-semibold mb-2 text-sm">Síguenos</h4>
           <ul className="flex gap-4 mt-2">
             <li>
               <a

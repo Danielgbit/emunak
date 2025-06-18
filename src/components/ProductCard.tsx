@@ -15,7 +15,7 @@ const ProductCard = ({ product }: { product: Products }) => {
   return (
     <div
       key={product.id}
-      className="flex flex-col justify-between text-color-t bg-gradient-card pb-6 rounded-xl shadow"
+      className="flex w-[250px] gap-3 h-auto flex-col justify-between text-color-t bg-gradient-card pb-6 rounded-xl shadow "
     >
       <Image
         src={product.image}
@@ -24,13 +24,13 @@ const ProductCard = ({ product }: { product: Products }) => {
         height={500}
         className="w-full h-64 object-cover rounded-lg"
       />
-      <h3 className="tracking-text text-color-t mt-4 text-[16px] font-normal text-center">
+      <h3 className="tracking-text text-color-t mt-4 text-[14px] font-semibold text-center">
         {product.name}
       </h3>
       <span className="font-bold">$ {product.price}</span>
       <button
         onClick={handleBuy}
-        className="bg-button py-1 rounded-[100px] w-[50%] mx-auto text-2xs tracking-text"
+        className="bg-button py-1 font-semibold rounded-[100px] w-[50%] mx-auto text-2xs tracking-text"
       >
         Comprar ahora
       </button>

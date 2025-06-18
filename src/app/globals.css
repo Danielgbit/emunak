@@ -36,6 +36,12 @@ body {
 
 .bg-button {
   background-color: #282605b6;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    background-color: #cac52ab6;
+    color: #1e1d01;
+  }
 } 
 
 .text-other {
