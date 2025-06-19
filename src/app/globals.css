@@ -44,6 +44,10 @@ body {
   }
 } 
 
+.swiper-pagination-bullet {
+  background-color: #fffcb4 !important;
+}
+
 .text-other {
   color: #fffcaf;
 }
