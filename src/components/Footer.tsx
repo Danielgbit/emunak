@@ -23,24 +23,24 @@ export default function Footer() {
         {/* Navegación */}
         <div>
           <h4 className="font-semibold mb-5 text-sm">Navegación</h4>
-          <ul className="space-y-2 text-sm text-4xs">
+          <ul className="space-y-2 text-4xs">
             <li>
-              <a href="#about" className="tracking-[-0.8px] hover:text-pink-600 transition">
+              <a href="#about" className="tracking-[-0.8px] hover:text-light transition">
                 Sobre nosotros
               </a>
             </li>
             <li>
-              <a href="#benefits" className="tracking-[-0.8px] hover:text-pink-600 transition">
+              <a href="#benefits" className="tracking-text hover:text-light transition">
                 Beneficios
               </a>
             </li>
             <li>
-              <a href="#gallery" className="tracking-[-0.8px] hover:text-pink-600 transition">
+              <a href="#gallery" className="tracking-text hover:text-light transition">
                 Galería
               </a>
             </li>
             <li>
-              <a href="#contacto" className="tracking-[-0.8px] hover:text-pink-600 transition">
+              <a href="#contacto" className="tracking-text hover:text-light transition">
                 Contacto
               </a>
             </li>
@@ -54,7 +54,7 @@ export default function Footer() {
             <li>
               <a
                 href="mailto:contacto@emunak.com"
-                className="tracking-[-0.8px] hover:text-pink-600 transition"
+                className="tracking-text hover:text-light transition"
               >
                 contacto@emunak.com
               </a>
@@ -64,12 +64,12 @@ export default function Footer() {
                 href="https://wa.me/573001234567"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="tracking-[-0.8px] hover:text-pink-600 transition"
+                className="tracking-text hover:text-light transition"
               >
                 +57 300 123 4567
               </a>
             </li>
-            <li className="tracking-[-0.8px]">Medellín, Colombia</li>
+            <li className="tracking-text">Medellín, Colombia</li>
           </ul>
         </div>
 

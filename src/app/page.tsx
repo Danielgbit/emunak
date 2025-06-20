@@ -14,17 +14,15 @@ import FeaturedProducts from "@/sections/FeaturedProducts";
 export default function Home() {
   return (
     <div className="h-full">
-      <Navbar/>
         <Hero />
         <Benefits />
         <About/>
         <Testimonials/>
+        <Gallery/>
         <CTA/>
         <FeaturedProducts/>
         <Instructions/>
         <FAQ/>
-        <Gallery/>
-      <Footer/>
     </div>
   );
 }

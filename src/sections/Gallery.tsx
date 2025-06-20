@@ -27,31 +27,34 @@ const Gallery = () => {
   ];
 
   return (
-    <Swiper
-      modules={[Autoplay, Pagination]}
-      autoplay={{ delay: 3000, disableOnInteraction: false }}
-      pagination={{ clickable: true }}
-      loop={true}
-      spaceBetween={20}
-      slidesPerView={1}
-      breakpoints={{
-        640: { slidesPerView: 1 },
-        768: { slidesPerView: 2 },
-        1024: { slidesPerView: 3 },
-      }}
-    >
-      {images.map((img, index) => (
-        <SwiperSlide key={index}>
-          <Image
-            width={500}
-            height={500}
-            alt={img.alt}
-            src={img.src}
-            className="object-cover w-[400px] h-[300px] rounded-xl"
-          />
-        </SwiperSlide>
-      ))}
-    </Swiper>
+    <div className="my-40">
+      <div className="text-3xl font-bold text-center mb-8 tracking-text text-light mb-20">Galeria</div>
+      <Swiper
+        modules={[Autoplay, Pagination]}
+        autoplay={{ delay: 3000, disableOnInteraction: false }}
+        pagination={{ clickable: true }}
+        loop={true}
+        spaceBetween={20}
+        slidesPerView={1}
+        breakpoints={{
+          640: { slidesPerView: 1 },
+          768: { slidesPerView: 2 },
+          1024: { slidesPerView: 3 },
+        }}
+      >
+        {images.map((img, index) => (
+          <SwiperSlide key={index}>
+            <Image
+              width={500}
+              height={500}
+              alt={img.alt}
+              src={img.src}
+              className="object-cover w-[400px] h-[300px] rounded-xl"
+            />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
   );
 };
 

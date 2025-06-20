@@ -11,15 +11,15 @@ export const metadata: Metadata = {
 const ProductsPage = () => {
   return (
     <section className="py-20 px-4 text-center font-rubik">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto mt-40">
         <h2 className="text-4xl mb-4 font-semibold tracking-[-0.8px] text-color-t">
           Nuestras velas
         </h2>
-        <p className="mt-2 mb-12 tracking-[-0.8px] text-color-t">
+        <p className="mt-2 mb-40 tracking-[-0.8px] text-color-t">
           Explora nuestros productos hechos con amor y dedicación.
         </p>
 
-        <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        <div className="flex flex-wrap gap-8 justify-center aling-center my-40">
           {products.map((product) => (
             <ProductCard key={product.id} product={product} />
           ))}
