@@ -36,7 +36,7 @@ function Testimonials() {
             transition={{ duration: 1 }}
             viewport={{ once: false, amount: 0.5 }}
             key={testimonial.id}
-            className="bg-gradient-card text-color-t p-6 tracking-[-0.8px] text-[14px] rounded-[20px] shadow max-w-sm"
+            className="bg-gradient-card text-color-t p-6 tracking-[-0.8px] text-4xs  rounded-[20px] shadow max-w-sm"
           >
             “{testimonial.quote}”
             <footer className="mt-4 text-rem-1 text-color-t">

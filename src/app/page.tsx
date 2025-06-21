@@ -16,13 +16,13 @@ export default function Home() {
     <div className="h-full">
       {/* <Hero /> */}
       <Benefits />
-      {/*<About/>
+      <About/>
+        <FAQ/> 
         <Testimonials/>
-        <Gallery/>
+ {/*        <Gallery/>
         <CTA/>
         <FeaturedProducts/>
-        <Instructions/>
-        <FAQ/> */}
+        <Instructions/> */}
     </div>
   );
 }
