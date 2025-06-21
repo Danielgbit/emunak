@@ -14,9 +14,9 @@ import FeaturedProducts from "@/sections/FeaturedProducts";
 export default function Home() {
   return (
     <div className="h-full">
-        <Hero />
-{/*         <Benefits />
-        <About/>
+      {/* <Hero /> */}
+      <Benefits />
+      {/*<About/>
         <Testimonials/>
         <Gallery/>
         <CTA/>

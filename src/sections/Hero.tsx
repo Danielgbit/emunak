@@ -2,7 +2,7 @@ import image from "../../public/images/hero.png";
 
 const Hero = () => {
   return (
-    <div className="flex relative flex-col items-center pt-20">
+    <div className="w-screen flex relative flex-col items-center pt-20">
       <div className="w-screen">
         <img
           src={image.src}
