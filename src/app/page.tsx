@@ -15,14 +15,14 @@ export default function Home() {
   return (
     <div className="h-full">
         <Hero />
-        <Benefits />
+{/*         <Benefits />
         <About/>
         <Testimonials/>
         <Gallery/>
         <CTA/>
         <FeaturedProducts/>
         <Instructions/>
-        <FAQ/>
+        <FAQ/> */}
     </div>
   );
 }
