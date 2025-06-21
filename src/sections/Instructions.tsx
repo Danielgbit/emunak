@@ -20,7 +20,7 @@ function Instructions() {
   return (
     <section id="instrucciones" className="py-16 my-40 px-6 text-gray-800">
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-3xl text-light tracking-text font-bold text-center mb-10">
+        <h2 className="text-2xl md:text-4x1 text-light tracking-text font-bold text-center mb-10">
           Instrucciones de Uso & Cuidado
         </h2>
         <div className="grid gap-8 md:grid-cols-3 mt-20 tracking-text">

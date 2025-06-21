@@ -27,8 +27,11 @@ const Gallery = () => {
   ];
 
   return (
-    <div className="my-40">
-      <div className="text-3xl font-bold text-center mb-8 tracking-text text-light mb-20">Galeria</div>
+ <div className="my-20 px-4">
+      <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 tracking-wide text-light">
+        Galería
+      </h2>
+
       <Swiper
         modules={[Autoplay, Pagination]}
         autoplay={{ delay: 3000, disableOnInteraction: false }}
@@ -43,13 +46,13 @@ const Gallery = () => {
         }}
       >
         {images.map((img, index) => (
-          <SwiperSlide key={index}>
+          <SwiperSlide key={index} className="flex justify-center">
             <Image
-              width={500}
-              height={500}
+              width={400}
+              height={300}
               alt={img.alt}
               src={img.src}
-              className="object-cover w-[400px] h-[300px] rounded-xl"
+              className="object-cover w-full h-[250px] sm:h-[300px] md:h-[350px] rounded-xl"
             />
           </SwiperSlide>
         ))}

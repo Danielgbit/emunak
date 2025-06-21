@@ -6,7 +6,7 @@ const CTA = () => {
       id="contacto"
       className="py-20 px-6 my-[10%] text-center text-color-t"
     >
-      <h2 className="text-4xl tracking-[-0.8px] text-color-t font-semibold mb-4">¿Te gustaría probarlas?</h2>
+      <h2 className="text-3xl md:text-4x1 tracking-text text-color-t font-semibold mb-4">¿Te gustaría probarlas?</h2>
       <p className="mb-6 ">Escríbenos y descubre el aroma perfecto para ti.</p>
       <a
         href="https://wa.me/573001234567"
