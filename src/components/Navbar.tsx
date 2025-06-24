@@ -23,7 +23,7 @@ const Navbar = () => {
         "fixed w-screen z-50 transition-transform duration-300",
         {
           "translate-y-0": showNavbar,
-          "-translate-y-full": !showNavbar,
+          "-translate-y-[500px]": !showNavbar,
         }
       )}
     >
@@ -46,7 +46,7 @@ const Navbar = () => {
         {/* Menú de navegación */}
         <ul
           className={clsx(
-            "absolute top-full left-0 w-full flex-col bg-black md:bg-transparent md:static md:flex md:flex-row md:items-center md:justify-end md:w-auto",
+            "absolute top-full left-0 w-full flex-col bg-navbar md:bg-transparent md:static md:flex md:flex-row md:items-center md:justify-end md:w-auto",
             {
               "flex": showMain,
               "hidden": !showMain,
@@ -57,7 +57,7 @@ const Navbar = () => {
             <li key={index} className="text-center py-3 md:py-0">
               <Link
                 href={item.href}
-                className="block px-4 py-2 text-white hover:text-gray-300 tracking-wide text-sm md:text-[14px]"
+                className="block px-4 py-2 text-white hover:text-gray-300 tracking-text text-4xs md:text-[14px]"
               >
                 {item.label}
               </Link>
