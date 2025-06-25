@@ -1,3 +1,6 @@
+"use client";
+import { motion } from "framer-motion";
+
 const instructions = [
   {
     title: "Cómo encenderlas correctamente",
@@ -18,20 +21,25 @@ const instructions = [
 
 function Instructions() {
   return (
-    <section id="instrucciones" className="py-16 my-40 px-6 text-gray-800">
+    <motion.section
+      initial={{ opacity: 0, y: 100 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1 }}
+      viewport={{ once: false, amount: 0.5 }}
+      id="instrucciones"
+      className="py-16 my-40 px-6 text-gray-800"
+    >
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-2xl md:text-4x1 text-light tracking-text font-bold text-center mb-10">
+        <h2 className="text-2xl md:text-4xl text-light tracking-text font-bold text-center mb-10">
           Instrucciones de Uso & Cuidado
         </h2>
         <div className="grid gap-8 md:grid-cols-3 mt-20 tracking-text">
           {instructions.map((item, index) => (
             <div
               key={index}
-              className="bg-card text-light p-6 rounded-xl shadow-md hover:shadow-lg transition"
+              className="bg-card text-light p-6 rounded-xl shadow-md hover:shadow-xl hover:scale-[1.02] transition duration-300"
             >
-              <h3 className="text-xl font-semibold mb-2">
-                {item.title}
-              </h3>
+              <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
               <p className="text-other text-[15px] mt-5 leading-relaxed">
                 {item.description}
               </p>
@@ -39,7 +47,7 @@ function Instructions() {
           ))}
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
 

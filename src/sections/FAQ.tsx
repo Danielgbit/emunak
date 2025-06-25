@@ -34,7 +34,14 @@ function FAQ() {
   };
 
   return (
-    <section id="faq" className="py-16 px-6 text-light my-40">
+    <motion.section
+      initial={{ opacity: 0, y: 100 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1 }}
+      viewport={{ once: false, amount: 0.5 }}
+      id="faq"
+      className="py-16 px-6 text-light my-40"
+    >
       <div className="max-w-4xl mx-auto">
         <h2 className="text-3xl font-bold text-center mb-8 tracking-text">
           Preguntas Frecuentes
@@ -67,7 +74,7 @@ function FAQ() {
           ))}
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
 

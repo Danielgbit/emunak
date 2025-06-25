@@ -54,10 +54,10 @@ const Navbar = () => {
           )}
         >
           {NAV_LINKS.map((item, index) => (
-            <li key={index} className="text-center py-3 md:py-0">
+            <li key={index} className="text-center md:px-3 py-3 md:py-0">
               <Link
                 href={item.href}
-                className="block px-4 py-2 text-white hover:text-gray-300 tracking-text text-4xs md:text-[14px]"
+                className="block px-4 py-2 text-links tracking-text text-4xs md:text-[14px]"
               >
                 {item.label}
               </Link>
