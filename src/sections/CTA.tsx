@@ -1,3 +1,4 @@
+import Button from "@/components/Button";
 import React from "react";
 
 const CTA = () => {
@@ -13,7 +14,7 @@ const CTA = () => {
         target="_blank"
         className="inline-block bg-cards tracking-[-0.8px] px-6 py-3 rounded-full font-medium hover:bg-cards transition"
       >
-        Contáctanos por WhatsApp
+        <Button text="Contactanos por whatsapp" />
       </a>
     </section>
   );

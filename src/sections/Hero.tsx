@@ -1,3 +1,4 @@
+import Button from "@/components/Button";
 import image from "../../public/images/hero.png";
 
 const Hero = () => {
@@ -14,14 +15,13 @@ const Hero = () => {
         <h1 className="tracking-text text-color-t  text-[40px] md:text-h1 font-bold">
           Emunak
         </h1>
-        <span className="font-rubik text-color-t md:text-4xs font-light uppercase text-3xs tracking-[1px]">
+        <span className="px-10 text-light font-medium md:text-4xs font-light uppercase text-3xs tracking-[1px]">
           Velas de soya 100%
         </span>
         <a
           href="#products"
-          className="font-rubik uppercase rounded-[30px] text-4xs px-3 py-2 text-color-t top-80 bg-cards hover:bg-white hover:text-black transition hover:duration-800 ease-in-out"
         >
-          Ver productos
+          <Button text="ver productos"/>
         </a>
       </div>
     </div>
