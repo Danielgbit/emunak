@@ -21,7 +21,7 @@ const seo = {
     siteName: "Emunak",
     images: [
       {
-        url: "https://emunak.vercel.app/images/og-image.jpg",
+        url: "https://emunak.vercel.app/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Velas aromáticas Emunak",
@@ -36,7 +36,7 @@ const seo = {
     title: "Emunak | Velas Aromáticas",
     description:
       "Descubre nuestras velas artesanales y conecta con la calma.",
-    images: ["https://emunak.vercel.app/images/og-image.jpg"],
+    images: ["https://emunak.vercel.app/og-image.jpg"],
   },
   additionalMetaTags: [
     { name: "author", content: "Emunak" },
