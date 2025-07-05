@@ -27,7 +27,7 @@ const Navbar = () => {
         }
       )}
     >
-      <nav className="bg-navbar py-4 px-6 flex items-center justify-between shadow-md">
+      <nav className="bg-navbar py-5 px-4 flex items-center justify-between shadow-md">
         {/* Logo */}
         <Link href="#about">
           <Image
@@ -46,7 +46,7 @@ const Navbar = () => {
         {/* Menú de navegación */}
         <ul
           className={clsx(
-            "absolute top-full left-0 w-full flex-col bg-navbar md:bg-transparent md:static md:flex md:flex-row md:items-center md:justify-end md:w-auto",
+            "absolute top-full left-0 md:w-[80%] flex-col bg-navbar md:bg-transparent md:static md:flex md:flex-row md:items-center md:justify-evenly md:w-auto",
             {
               "flex": showMain,
               "hidden": !showMain,
@@ -54,7 +54,7 @@ const Navbar = () => {
           )}
         >
           {NAV_LINKS.map((item, index) => (
-            <li key={index} className="text-center md:px-3 py-3 md:py-0">
+            <li key={index} className="text-center  md:px-3 py-3 md:py-0">
               <Link
                 href={item.href}
                 className="block px-4 py-2 text-links tracking-text text-4xs md:text-[14px]"
